@@ -8,3 +8,4 @@
 | npm install -g @angular/cli                         | install angular/cli            |
 | ng new mi-primer-angular --standalone --routing --style=css | creación de proyecto en angular |
 | ng serve -o | corre el servidor y abre el navegador |
+| ng generate service services/user.service/user.service | crea los servicios dentro de la carpeta src/app|
