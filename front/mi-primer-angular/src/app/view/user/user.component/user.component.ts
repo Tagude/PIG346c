@@ -11,6 +11,8 @@ import { ChangeDetectorRef } from '@angular/core';
   styleUrls: ['./user.component.css'],
 })
 export class UserComponent {
+//signals 
+
   users : any[] = [];
 
   constructor(private userService: UserService, private cdr: ChangeDetectorRef) {
