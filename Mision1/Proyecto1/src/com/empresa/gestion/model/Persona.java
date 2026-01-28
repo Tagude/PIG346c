@@ -2,17 +2,20 @@ package com.empresa.gestion.model;
 
 public class Persona {
     //🔐 Encapsulación
-    private String nombre;
+    protected int id;
+    protected String nombre;
     protected int edad;
     protected boolean activo; //true o false
     protected char genero;  //'M' o 'F'
+    
 
     //🧱 Constructor
-    public Persona(String nombre, int edad, boolean activo, char genero) {
+    public Persona(int id, String nombre, int edad, boolean activo, char genero) {
         this.nombre = nombre;
         this.edad = edad;
         this.activo = activo;
         this.genero = genero;
+        this.id = id;
     }
     //🔧 Getters y Setters
     public String getNombre() {
@@ -32,6 +35,9 @@ public class Persona {
     }
     public void setGenero(char genero) {
         this.genero = genero;
+    }
+    public int getId() {
+        return id;
     }
 
     //📝 Método
