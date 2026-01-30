@@ -32,4 +32,15 @@ public class EmpleadoService {
         }
         System.out.println("Empleado con ID " + id + " no encontrado.");
     }
+
+    // Método para buscar un empleado por ID
+    public void buscarEmpleado(int id) {
+        for (Empleado emp : empleados) {
+            if (emp.getId() == id) {
+                System.out.println(emp.resumen());
+                return;
+            }
+        }
+        System.out.println("Empleado con ID " + id + " no encontrado.");
+    }
 }

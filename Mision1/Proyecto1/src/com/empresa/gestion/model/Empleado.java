@@ -69,6 +69,9 @@ public class Empleado extends Persona{
         return "ID: " + id + 
                 ", Nombre: " + nombre + 
                 ", Edad: " + edad + 
-                ", Genero: " + genero;
+                ", Activo: " + activo +
+                ", Género: " + genero +
+                ", Salario: " + salario +
+                ", Horas Trabajadas: " + horasTrabajadas;
     }
 }
