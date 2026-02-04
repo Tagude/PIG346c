@@ -1,0 +1,14 @@
+<div class="row g-5" style="gap : 16px;">
+
+  @for(p of pokemons; track p.name) {
+  <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card" style="width: 18rem;">
+    
+        <div class="card-body">
+          <h5 class="card-name">{{ p.name }}</h5>
+          <a [href]="p.url" target="_blank" class="card-subtitle mb-2 text-muted">{{ p.url }}</a>
+        </div>
+      </div>
+  </div>
+  }
+</div>
