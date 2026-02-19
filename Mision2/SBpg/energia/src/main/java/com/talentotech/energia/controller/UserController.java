@@ -36,8 +36,18 @@ public class UserController {
     @PutMapping("/{id}")
     public User updateUser(@PathVariable Long id, @RequestBody User userDetails) {
         User user = userRepository.findById(id).orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
-        user.setUsername(userDetails.getUsername());
-        user.setEmail(userDetails.getEmail());
+        if(userDetails.getUsername() != null &&
+           !userDetails.getUsername().trim().isEmpty()) {
+            user.setUsername(userDetails.getUsername());
+        }
+        if(userDetails.getEmail() != null &&
+           !userDetails.getEmail().trim().isEmpty()) {
+            user.setEmail(userDetails.getEmail());
+        }
+        if(userDetails.getPassword() != null &&
+           !userDetails.getPassword().trim().isEmpty()) {
+            user.setPassword(userDetails.getPassword());
+        }
         return userRepository.save(user);
     }
 }

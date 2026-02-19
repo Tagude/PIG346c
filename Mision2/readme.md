@@ -18,4 +18,15 @@ Spring Web
 Spring Data JPA
 PostgreSql Driver
 
+verificar si esta instalado mvn -v
+mvn clean
+mvn spring-boot:run
+.\mvnw.cmd spring-boot:run
+
+para el mensaje ajustar aplication.yml al final del codigo
+```
+ error:
+    include-message: always
+```
+
 
