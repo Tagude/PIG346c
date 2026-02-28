@@ -4,6 +4,11 @@ spring:
     username: postgres
     password: Colombia1
 
+  security:
+    user:
+      name: admin
+      password: 12345 
+
   jpa:
     hibernate:
       ddl-auto: update

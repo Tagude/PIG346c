@@ -12,7 +12,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(nullable =false,unique = true)
+    @Column(nullable =false, unique = true)
     private String username;
     @Column(nullable = false, unique = true)
     private String email;
@@ -22,7 +22,7 @@ public class User {
     @Enumerated(EnumType.STRING)
     private Role role;
     @CreationTimestamp
-    @Column (name = "created_at", nullable = false,updatable = false)
+    @Column (name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt;
     @UpdateTimestamp
     @Column(name = "updated_at")
@@ -62,5 +62,4 @@ public class User {
     public void setRole(Role role) {
         this.role = role;
     }
-
 }
