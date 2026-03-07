@@ -25,7 +25,7 @@ public class SecurityConfig {
                 .requestMatchers("/api/users/login").permitAll()
                 .requestMatchers("/api/country").permitAll()
                 .requestMatchers("/api/region").permitAll()
-                .requestMatchers("api/company").permitAll()
+                .requestMatchers("/api/company").permitAll()
                 .requestMatchers("/api/energy-type").permitAll()
                 .requestMatchers("/api/power-plant").permitAll()
                 .requestMatchers("/api/measurement-type").permitAll()
